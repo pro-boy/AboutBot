@@ -14,10 +14,13 @@ async def _(event):
     name = who.user.first_name
     uname = Config.OWNER_UN
     botname = Config.BOT_NAME
-    await aboutbot.send_message(event.chat_id, f"**Hey {name}, I am {botname}.\n\nI am assistant of {uname}\n\nYou can check his info through me.😊**", 
+    await aboutbot.send_message(event.chat_id, f"**Hello {name},\nNice To Meet You! I'm {botname}.\n\nMy Master {uname}\nYou Can Contact My Master Using Me. \n\nNOTE: All your messages here will be forwared to my MASTER**", 
                                 buttons=[
-                                    [Button.inline("Help:💬", data="help")],
-                                    [Button.url("Deploy Your Own Bot🤩", url="https://heroku.com/deploy?template=https://github.com/anonyindian/aboutbot")]
+                                    [Button.inline("Help", data="help")],
+                                    [Button.url("My Master", url="https://t.me/CrackxCreator")],
+                                    [Button.url("Crazy Creators", url="https://t.me/CrazyCreatorz")],
+                                    [Button.url("Useless Group", url="t.me/WeAreUseless")],
+                                    [Button.url("Memes", url="https://t.me/desi_memes_hub")]
                                 ])
     
 @aboutbot.on(events.callbackquery.CallbackQuery(data="help"))
