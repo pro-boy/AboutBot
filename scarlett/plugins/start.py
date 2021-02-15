@@ -18,9 +18,9 @@ async def _(event):
                                 buttons=[
                                     [Button.inline("Help", data="help")],
                                     [Button.url("My Master", url="https://t.me/CrackxCreator")],
-                                    [Button.url("Crazy Creators", url="https://t.me/CrazyCreatorz")],
+                                    [Button.url("Crazy Creators Group", url="https://t.me/CrazyCreatorz")],
                                     [Button.url("Useless Group", url="t.me/WeAreUseless")],
-                                    [Button.url("Memes", url="https://t.me/desi_memes_hub")]
+                                    [Button.url("Memes Channel", url="https://t.me/desi_memes_hub")]
                                 ])
     
 @aboutbot.on(events.callbackquery.CallbackQuery(data="help"))
