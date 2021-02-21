@@ -15,7 +15,6 @@ async def _(event):
     uname = Config.OWNER_UN
     botname = Config.BOT_NAME
     await aboutbot.send_message(event.chat_id, f"**Hello {name},\nNice To Meet You! I'm {botname}.\n\nMy Master {uname}\nYou Can Contact My Master Using Me. \n\nNOTE: All your messages here will be forwared to my MASTER**", 
-", 
                                 buttons=[
                                     [Button.inline("About Me", data="help")],
                                     [Button.url("My Master", url="https://t.me/CrackXCreator")]
